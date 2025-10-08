@@ -4,15 +4,24 @@
 
 # Integrantes
 
+* [David Enrique Barón Rubio](https://github.com/Dai-En)
+* [Daniel Andrés Ramirez Morales](https://github.com/daramirezmor)
+* [Indaliria Valentina Cardona Corredor](https://github.com/valentinacardona07)
+
 # Informe
 
 Indice:
 
-1. [Diseño implementado](#diseño-implementado)
-2. [Simulaciones](#simulaciones)
-3. [Implementación](#implementación)
-4. [Conclusiones](#conclusiones)
-5. [Referencias](#referencias)
+- [Lab02 - Unidad Aritmético-Lógica.](#lab02---unidad-aritmético-lógica)
+- [Integrantes](#integrantes)
+- [Informe](#informe)
+  - [Diseño implementado](#diseño-implementado)
+    - [Descripción](#descripción)
+    - [Diagrama](#diagrama)
+  - [Simulaciones](#simulaciones)
+  - [Implementación](#implementación)
+  - [Conclusiones](#conclusiones)
+  - [Referencias](#referencias)
 
 ## Diseño implementado
 
