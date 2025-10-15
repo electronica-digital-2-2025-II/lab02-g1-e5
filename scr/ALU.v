@@ -1,8 +1,8 @@
-`include "scr\suma4bits.v"
-`include "scr\Resta4bits.v"
-`include "scr\Multiplicador4bits.v"
-`include "scr\Mover_Izquierda.v"
-`include "scr\ModuloXor.v"
+`include "suma4bits.v"
+`include "Resta4bits.v"
+`include "Multiplicador4bits.v"
+`include "Mover_Izquierda.v"
+`include "ModuloXor.v"
 
 // Ops:
 //   000: ADD   (A + B)

@@ -1,3 +1,6 @@
+`ifndef SUMA1BIT_V
+`define SUMA1BIT_V
+
 module suma1bit(
     input A,
     input B,
@@ -16,5 +19,6 @@ assign and2 = Cin & xor1;
 assign S = Cin ^ xor1;
 assign Cout =  and1 | and2;
 
-
 endmodule
+
+`endif // SUMA1BIT_V
