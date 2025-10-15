@@ -1,0 +1,303 @@
+$date
+	Tue Oct 14 22:43:56 2025
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module Resta4bits_tb $end
+$var wire 1 ! Z $end
+$var wire 1 " Ov $end
+$var wire 1 # N $end
+$var wire 4 $ D [3:0] $end
+$var reg 4 % A [3:0] $end
+$var reg 4 & B [3:0] $end
+$scope module dut $end
+$var wire 4 ' A [3:0] $end
+$var wire 4 ( B [3:0] $end
+$var wire 4 ) Bx [3:0] $end
+$var wire 1 " Overflow $end
+$var wire 1 ! Zero $end
+$var wire 1 # Negative $end
+$var wire 4 * D [3:0] $end
+$var wire 1 + Cout $end
+$scope module u_add $end
+$var wire 4 , A [3:0] $end
+$var wire 4 - B [3:0] $end
+$var wire 1 . Cin $end
+$var wire 5 / ST [4:0] $end
+$var wire 4 0 S [3:0] $end
+$var wire 1 + Cout $end
+$var wire 1 1 C2 $end
+$var wire 1 2 C1 $end
+$var wire 1 3 C0 $end
+$scope module bit0 $end
+$var wire 1 4 A $end
+$var wire 1 5 B $end
+$var wire 1 . Cin $end
+$var wire 1 3 Cout $end
+$var wire 1 6 S $end
+$var wire 1 7 and1 $end
+$var wire 1 8 and2 $end
+$var wire 1 9 xor1 $end
+$upscope $end
+$scope module bit1 $end
+$var wire 1 : A $end
+$var wire 1 ; B $end
+$var wire 1 3 Cin $end
+$var wire 1 2 Cout $end
+$var wire 1 < S $end
+$var wire 1 = and1 $end
+$var wire 1 > and2 $end
+$var wire 1 ? xor1 $end
+$upscope $end
+$scope module bit2 $end
+$var wire 1 @ A $end
+$var wire 1 A B $end
+$var wire 1 2 Cin $end
+$var wire 1 1 Cout $end
+$var wire 1 B S $end
+$var wire 1 C and1 $end
+$var wire 1 D and2 $end
+$var wire 1 E xor1 $end
+$upscope $end
+$scope module bit3 $end
+$var wire 1 F A $end
+$var wire 1 G B $end
+$var wire 1 1 Cin $end
+$var wire 1 + Cout $end
+$var wire 1 H S $end
+$var wire 1 I and1 $end
+$var wire 1 J and2 $end
+$var wire 1 K xor1 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+1K
+1J
+0I
+0H
+1G
+0F
+0E
+0D
+1C
+1B
+1A
+1@
+1?
+1>
+0=
+0<
+0;
+1:
+09
+08
+17
+16
+15
+14
+13
+12
+11
+b101 0
+b10101 /
+1.
+b1101 -
+b111 ,
+1+
+b101 *
+b1101 )
+b10 (
+b111 '
+b10 &
+b111 %
+b101 $
+0#
+0"
+0!
+$end
+#1000
+0+
+1#
+18
+06
+13
+0>
+1<
+0J
+1H
+19
+07
+0?
+1=
+0D
+b1110 /
+b1110 $
+b1110 *
+b1110 0
+1B
+01
+05
+1;
+0A
+0E
+0C
+b1010 )
+b1010 -
+0@
+b101 &
+b101 (
+b11 %
+b11 '
+b11 ,
+#2000
+0"
+11
+1#
+1>
+0!
+0<
+12
+1D
+0B
+b1000 $
+b1000 *
+b1000 0
+1H
+b11000 /
+1+
+1?
+0=
+1E
+0K
+1I
+0:
+1@
+1F
+b1101 %
+b1101 '
+b1101 ,
+#3000
+11
+1D
+0B
+08
+16
+12
+1#
+09
+17
+1"
+1>
+0<
+0J
+0!
+b1001 $
+b1001 *
+b1001 0
+1H
+b1001 /
+0+
+15
+0;
+0G
+1?
+0=
+0K
+0I
+b1 )
+b1 -
+1:
+0F
+b1110 &
+b1110 (
+b111 %
+b111 '
+b111 ,
+#4000
+02
+01
+1+
+0#
+1I
+1"
+08
+16
+03
+0>
+1<
+0D
+1B
+0J
+b10111 /
+b111 $
+b111 *
+b111 0
+0H
+05
+1;
+1A
+1G
+09
+07
+1?
+1E
+0K
+b1110 )
+b1110 -
+04
+0:
+0@
+1F
+b1 &
+b1 (
+b1000 %
+b1000 '
+b1000 ,
+#5000
+1!
+1D
+12
+1>
+0<
+13
+1J
+0#
+0"
+18
+06
+0B
+11
+b0 $
+b0 *
+b0 0
+0H
+b10000 /
+1+
+0A
+19
+1E
+0C
+1K
+0I
+b1010 )
+b1010 -
+14
+1@
+0F
+b101 &
+b101 (
+b101 %
+b101 '
+b101 ,
+#6000

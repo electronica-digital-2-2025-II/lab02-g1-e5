@@ -1,4 +1,4 @@
-`include "scr\suma4bits.v"
+`include "scr/suma4bits.v"
 `timescale 1ps/1ps
 
 module suma4bits_tb();

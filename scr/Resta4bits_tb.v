@@ -1,4 +1,4 @@
-`include "scr\Resta4bits.v"
+`include "scr/Resta4bits.v"
 // sub4b_tb.v
 `timescale 1ns/1ps
 module Resta4bits_tb;
