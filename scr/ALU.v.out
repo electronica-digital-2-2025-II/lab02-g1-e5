@@ -1,0 +1,125 @@
+#! /d/a/fpga-toolchain-build/fpga-toolchain-build/iverilog/_install/bin/vvp
+:ivl_version "11.0 (stable)" "(d3b0992)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "C:\PROGRA~3\CHOCOL~1\lib\iverilog\tools\lib\ivl\system.vpi";
+:vpi_module "C:\PROGRA~3\CHOCOL~1\lib\iverilog\tools\lib\ivl\vhdl_sys.vpi";
+:vpi_module "C:\PROGRA~3\CHOCOL~1\lib\iverilog\tools\lib\ivl\vhdl_textio.vpi";
+:vpi_module "C:\PROGRA~3\CHOCOL~1\lib\iverilog\tools\lib\ivl\v2005_math.vpi";
+:vpi_module "C:\PROGRA~3\CHOCOL~1\lib\iverilog\tools\lib\ivl\va_math.vpi";
+S_0000023c659fcf60 .scope module, "suma4bits" "suma4bits" 2 3;
+ .timescale 0 0;
+    .port_info 0 /INPUT 4 "A";
+    .port_info 1 /INPUT 4 "B";
+    .port_info 2 /INPUT 1 "Cin";
+    .port_info 3 /OUTPUT 4 "S";
+    .port_info 4 /OUTPUT 5 "ST";
+    .port_info 5 /OUTPUT 1 "Cout";
+o0000023c65a4c8e8 .functor BUFZ 4, C4<zzzz>; HiZ drive
+v0000023c65a982b0_0 .net "A", 3 0, o0000023c65a4c8e8;  0 drivers
+o0000023c65a4c918 .functor BUFZ 4, C4<zzzz>; HiZ drive
+v0000023c65a994d0_0 .net "B", 3 0, o0000023c65a4c918;  0 drivers
+v0000023c65a983f0_0 .net "C0", 0 0, L_0000023c65a9b6d0;  1 drivers
+v0000023c65a99610_0 .net "C1", 0 0, L_0000023c65a9b5f0;  1 drivers
+v0000023c65a98490_0 .net "C2", 0 0, L_0000023c65a9b190;  1 drivers
+o0000023c65a4c018 .functor BUFZ 1, C4<z>; HiZ drive
+v0000023c65a98670_0 .net "Cin", 0 0, o0000023c65a4c018;  0 drivers
+v0000023c65a996b0_0 .net "Cout", 0 0, L_0000023c65a9b350;  1 drivers
+v0000023c65a98710_0 .net "S", 3 0, L_0000023c65a98c10;  1 drivers
+v0000023c65a98df0_0 .net "ST", 4 0, L_0000023c65a991b0;  1 drivers
+L_0000023c65a99110 .part o0000023c65a4c8e8, 0, 1;
+L_0000023c65a98850 .part o0000023c65a4c918, 0, 1;
+L_0000023c65a988f0 .part o0000023c65a4c8e8, 1, 1;
+L_0000023c65a97b30 .part o0000023c65a4c918, 1, 1;
+L_0000023c65a98e90 .part o0000023c65a4c8e8, 2, 1;
+L_0000023c65a98ad0 .part o0000023c65a4c918, 2, 1;
+L_0000023c65a98b70 .part o0000023c65a4c8e8, 3, 1;
+L_0000023c65a98f30 .part o0000023c65a4c918, 3, 1;
+L_0000023c65a98c10 .concat8 [ 1 1 1 1], L_0000023c65a9aef0, L_0000023c65a9af60, L_0000023c65a9b120, L_0000023c65a9b040;
+L_0000023c65a991b0 .concat [ 4 1 0 0], L_0000023c65a98c10, L_0000023c65a9b350;
+S_0000023c659fd0f0 .scope module, "bit0" "suma1bit" 2 16, 3 1 0, S_0000023c659fcf60;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "A";
+    .port_info 1 /INPUT 1 "B";
+    .port_info 2 /INPUT 1 "Cin";
+    .port_info 3 /OUTPUT 1 "S";
+    .port_info 4 /OUTPUT 1 "Cout";
+L_0000023c65a9b660 .functor XOR 1, L_0000023c65a99110, L_0000023c65a98850, C4<0>, C4<0>;
+L_0000023c65a9ae10 .functor AND 1, L_0000023c65a99110, L_0000023c65a98850, C4<1>, C4<1>;
+L_0000023c65a9aa90 .functor AND 1, o0000023c65a4c018, L_0000023c65a9b660, C4<1>, C4<1>;
+L_0000023c65a9aef0 .functor XOR 1, o0000023c65a4c018, L_0000023c65a9b660, C4<0>, C4<0>;
+L_0000023c65a9b6d0 .functor OR 1, L_0000023c65a9ae10, L_0000023c65a9aa90, C4<0>, C4<0>;
+v0000023c65a396a0_0 .net "A", 0 0, L_0000023c65a99110;  1 drivers
+v0000023c65a38c00_0 .net "B", 0 0, L_0000023c65a98850;  1 drivers
+v0000023c65a39240_0 .net "Cin", 0 0, o0000023c65a4c018;  alias, 0 drivers
+v0000023c65a39880_0 .net "Cout", 0 0, L_0000023c65a9b6d0;  alias, 1 drivers
+v0000023c65a38ca0_0 .net "S", 0 0, L_0000023c65a9aef0;  1 drivers
+v0000023c65a38d40_0 .net "and1", 0 0, L_0000023c65a9ae10;  1 drivers
+v0000023c65a38f20_0 .net "and2", 0 0, L_0000023c65a9aa90;  1 drivers
+v0000023c65a98350_0 .net "xor1", 0 0, L_0000023c65a9b660;  1 drivers
+S_0000023c65a43ec0 .scope module, "bit1" "suma1bit" 2 17, 3 1 0, S_0000023c659fcf60;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "A";
+    .port_info 1 /INPUT 1 "B";
+    .port_info 2 /INPUT 1 "Cin";
+    .port_info 3 /OUTPUT 1 "S";
+    .port_info 4 /OUTPUT 1 "Cout";
+L_0000023c65a9ada0 .functor XOR 1, L_0000023c65a988f0, L_0000023c65a97b30, C4<0>, C4<0>;
+L_0000023c65a9abe0 .functor AND 1, L_0000023c65a988f0, L_0000023c65a97b30, C4<1>, C4<1>;
+L_0000023c65a9b3c0 .functor AND 1, L_0000023c65a9b6d0, L_0000023c65a9ada0, C4<1>, C4<1>;
+L_0000023c65a9af60 .functor XOR 1, L_0000023c65a9b6d0, L_0000023c65a9ada0, C4<0>, C4<0>;
+L_0000023c65a9b5f0 .functor OR 1, L_0000023c65a9abe0, L_0000023c65a9b3c0, C4<0>, C4<0>;
+v0000023c65a985d0_0 .net "A", 0 0, L_0000023c65a988f0;  1 drivers
+v0000023c65a98530_0 .net "B", 0 0, L_0000023c65a97b30;  1 drivers
+v0000023c65a979f0_0 .net "Cin", 0 0, L_0000023c65a9b6d0;  alias, 1 drivers
+v0000023c65a99070_0 .net "Cout", 0 0, L_0000023c65a9b5f0;  alias, 1 drivers
+v0000023c65a987b0_0 .net "S", 0 0, L_0000023c65a9af60;  1 drivers
+v0000023c65a97db0_0 .net "and1", 0 0, L_0000023c65a9abe0;  1 drivers
+v0000023c65a98030_0 .net "and2", 0 0, L_0000023c65a9b3c0;  1 drivers
+v0000023c65a98d50_0 .net "xor1", 0 0, L_0000023c65a9ada0;  1 drivers
+S_0000023c65a44050 .scope module, "bit2" "suma1bit" 2 18, 3 1 0, S_0000023c659fcf60;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "A";
+    .port_info 1 /INPUT 1 "B";
+    .port_info 2 /INPUT 1 "Cin";
+    .port_info 3 /OUTPUT 1 "S";
+    .port_info 4 /OUTPUT 1 "Cout";
+L_0000023c65a9b740 .functor XOR 1, L_0000023c65a98e90, L_0000023c65a98ad0, C4<0>, C4<0>;
+L_0000023c65a9acc0 .functor AND 1, L_0000023c65a98e90, L_0000023c65a98ad0, C4<1>, C4<1>;
+L_0000023c65a9ab00 .functor AND 1, L_0000023c65a9b5f0, L_0000023c65a9b740, C4<1>, C4<1>;
+L_0000023c65a9b120 .functor XOR 1, L_0000023c65a9b5f0, L_0000023c65a9b740, C4<0>, C4<0>;
+L_0000023c65a9b190 .functor OR 1, L_0000023c65a9acc0, L_0000023c65a9ab00, C4<0>, C4<0>;
+v0000023c65a98990_0 .net "A", 0 0, L_0000023c65a98e90;  1 drivers
+v0000023c65a97e50_0 .net "B", 0 0, L_0000023c65a98ad0;  1 drivers
+v0000023c65a99390_0 .net "Cin", 0 0, L_0000023c65a9b5f0;  alias, 1 drivers
+v0000023c65a980d0_0 .net "Cout", 0 0, L_0000023c65a9b190;  alias, 1 drivers
+v0000023c65a97c70_0 .net "S", 0 0, L_0000023c65a9b120;  1 drivers
+v0000023c65a97a90_0 .net "and1", 0 0, L_0000023c65a9acc0;  1 drivers
+v0000023c65a992f0_0 .net "and2", 0 0, L_0000023c65a9ab00;  1 drivers
+v0000023c65a99570_0 .net "xor1", 0 0, L_0000023c65a9b740;  1 drivers
+S_0000023c65a441e0 .scope module, "bit3" "suma1bit" 2 19, 3 1 0, S_0000023c659fcf60;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "A";
+    .port_info 1 /INPUT 1 "B";
+    .port_info 2 /INPUT 1 "Cin";
+    .port_info 3 /OUTPUT 1 "S";
+    .port_info 4 /OUTPUT 1 "Cout";
+L_0000023c65a9ad30 .functor XOR 1, L_0000023c65a98b70, L_0000023c65a98f30, C4<0>, C4<0>;
+L_0000023c65a9ae80 .functor AND 1, L_0000023c65a98b70, L_0000023c65a98f30, C4<1>, C4<1>;
+L_0000023c65a9afd0 .functor AND 1, L_0000023c65a9b190, L_0000023c65a9ad30, C4<1>, C4<1>;
+L_0000023c65a9b040 .functor XOR 1, L_0000023c65a9b190, L_0000023c65a9ad30, C4<0>, C4<0>;
+L_0000023c65a9b350 .functor OR 1, L_0000023c65a9ae80, L_0000023c65a9afd0, C4<0>, C4<0>;
+v0000023c65a97ef0_0 .net "A", 0 0, L_0000023c65a98b70;  1 drivers
+v0000023c65a98fd0_0 .net "B", 0 0, L_0000023c65a98f30;  1 drivers
+v0000023c65a97d10_0 .net "Cin", 0 0, L_0000023c65a9b190;  alias, 1 drivers
+v0000023c65a98a30_0 .net "Cout", 0 0, L_0000023c65a9b350;  alias, 1 drivers
+v0000023c65a97f90_0 .net "S", 0 0, L_0000023c65a9b040;  1 drivers
+v0000023c65a98cb0_0 .net "and1", 0 0, L_0000023c65a9ae80;  1 drivers
+v0000023c65a98170_0 .net "and2", 0 0, L_0000023c65a9afd0;  1 drivers
+v0000023c65a98210_0 .net "xor1", 0 0, L_0000023c65a9ad30;  1 drivers
+# The file index is used to find the file name in the following table.
+:file_names 4;
+    "N/A";
+    "<interactive>";
+    "./suma4bits.v";
+    "./suma1bit.v";

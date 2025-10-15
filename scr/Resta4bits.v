@@ -1,4 +1,4 @@
-`include "scr/suma4bits.v"
+`include "suma4bits.v"
 
 // sub4b_signed.v
 module Resta4bits(

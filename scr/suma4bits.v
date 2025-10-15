@@ -1,4 +1,4 @@
-`include "scr/suma1bit.v"
+`include "suma1bit.v"
 
 module suma4bits (
     input [3:0] A,
