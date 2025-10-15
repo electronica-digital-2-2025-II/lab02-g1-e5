@@ -1,4 +1,4 @@
-//`include "scr\suma4bits.v"
+`include "scr\suma4bits.v"
 `include "scr\Resta4bits.v"
 `include "scr\Multiplicador4bits.v"
 `include "scr\Mover_Izquierda.v"
@@ -6,10 +6,10 @@
 
 module adder4_if (
     input  wire [3:0] A, B,
-    output wire [3:0] S
+    output wire [4:0] ST
 );
 
-    suma4bits u_add (.A(A), .B(B), .Cin(1'b0), .S(S), .Cout());
+    suma4bits u_add (.A(A), .B(B), .Cin(1'b0), .ST(ST), .Cout());
 
 endmodule
 
@@ -81,7 +81,7 @@ module alu4 #(
     wire         mul_done;
 
     // --- Instantiate operators ---
-    adder4_if u_add  (.A(A[3:0]), .B(B[3:0]),       .S(sum4));
+    adder4_if u_add  (.A(A[3:0]), .B(B[3:0]),       .ST(sum4));
 
     sub4_if   u_sub  (.A(A[3:0]), .B(B[3:0]),       .D(diff4), .Overflow(ovf_sub));
 
