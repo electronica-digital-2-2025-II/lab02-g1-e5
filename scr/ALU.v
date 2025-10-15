@@ -1,3 +1,8 @@
+`include "scr\suma4bits.v"
+`include "scr\Resta4bits.v"
+`include "scr\Multiplicador4bits.v"
+`include "scr\Mover_Izquierda.v"
+`include "scr\ModuloXor.v"
 
 // Ops:
 //   000: ADD   (A + B)
@@ -11,7 +16,7 @@ module ALU #(
 )(
     input  wire               clk,
     input  wire               rst,        
-    input  wire               init,       
+    input  wire               init,      
     input  wire [2:0]         opcode,     
     input  wire [M-1:0]       A,
     input  wire [M-1:0]       B,
@@ -22,11 +27,13 @@ module ALU #(
     output reg                done        
 );
 
-    
+
     // Aux: ancho del desplazamiento (al menos 1)
     localparam integer SHIFT_W = (M <= 2) ? 1 : $clog2(M);
 
+    // ----------------------------------------------------------------
     // Operaciones combinacionales
+    // ----------------------------------------------------------------
     // SUMA
     wire [M-1:0] add_S;
     wire         add_Cout;
@@ -60,7 +67,9 @@ module ALU #(
     // Overflow suma con signo: (~(Amsb^Bmsb)) & (Amsb^Sumsb)
     wire ovf_add = (~(A[M-1] ^ B[M-1])) & (A[M-1] ^ add_S[M-1]);
 
+    // ----------------------------------------------------------------
     // Multiplicación secuencial 4x4
+    // ----------------------------------------------------------------
     wire [2*M-1:0] mul_PP;
     wire           mul_done;
 

@@ -3,9 +3,9 @@ module Multiplicador4bits(
     input  wire       rst,      
     input  wire       init,     
     input  wire [3:0] MD,       
-    input  wire [3:0] MR,       
+    input  wire [3:0] MR,     
     output reg  [7:0] PP,       
-    output reg        done      
+    output reg        done     
 );
     // Estados
     localparam [2:0] S_IDLE  = 3'b000,
@@ -19,7 +19,7 @@ module Multiplicador4bits(
     reg [3:0] mdr;      // MD alineado para sumas
     reg [2:0] cnt;      // 0..4 (4 ciclos)
 
- 
+    // opcional: sincronizar init (si viene asíncrono)
     reg init_d;
     wire init_rise = init & ~init_d;
 
@@ -78,3 +78,4 @@ module Multiplicador4bits(
         end
     end
 endmodule
+
