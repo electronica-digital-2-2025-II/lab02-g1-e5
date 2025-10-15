@@ -1,4 +1,6 @@
-`include "scr/suma1bit.v"
+`ifndef SUMA4BITS_V
+`define SUMA4BITS_V
+`include "suma1bit.v"
 
 module suma4bits (
     input [3:0] A,
@@ -21,3 +23,5 @@ suma1bit bit3(.A(A[3]), .B(B[3]), .Cin(C2), .S(S[3]), .Cout(Cout));
 assign ST = {Cout, S};
 
 endmodule
+
+`endif // SUMA4BITS_V
