@@ -111,6 +111,8 @@ El desplazamiento máximo permitido es de 3 posiciones.
 
 ## Simulaciones 
 
+Se hicieron simulaciones en GTKwave en principio, de los módulos por separado, comprobando así el correcto funcionamiento de la suma de 4bits, la resta, multiplicaciín, XOR y corrimiento. Esto funcionó adecuadamente, no obstante, hubo inconvenientes a la hora de implementar un testbench general.
+
 ## Implementación
 Las siguientes imágenes muestran el montaje utilizado para la **implementación de la ALU**.  
 Se emplearon **switches externos** para las entradas `A[3:0]` y `B[3:0]`, los **switches de la tarjeta** para seleccionar el **opcode** (`op[2:0]`), y **10 LEDs** para las salidas: **8** asignados a la salida `Y[7:0]` y **2** a las banderas `zero` y `overflow`.  
