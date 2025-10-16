@@ -116,6 +116,12 @@ Las siguientes imágenes muestran el montaje utilizado para la **implementación
 Se emplearon **switches externos** para las entradas `A[3:0]` y `B[3:0]`, los **switches de la tarjeta** para seleccionar el **opcode** (`op[2:0]`), y **10 LEDs** para las salidas: **8** asignados a la salida `Y[7:0]` y **2** a las banderas `zero` y `overflow`.  
 Para garantizar niveles lógicos definidos, se usaron **resistencias pull-down** tanto en las **entradas** como en las **salidas**.
 
+Para la implementación física del diseño y la verificación de su funcionamiento se empleó la FPGA Zybo Z7 como unidad de procesamiento principal. La carga del código se realiza a través del software Vivado de Xilinx. El procedimiento comienza con la creación de un nuevo proyecto, en el cual se añade el archivo del diseño como Design Source y, en caso de querer realizar simulaciones, el testbench como Simulation Source. Cabe aclarar que también se hizo simulación con el programa GTKWave.
+
+Posteriormente, se lleva a cabo el flujo típico de diseño: análisis RTL, síntesis, implementación, generación del bitstream y, finalmente, la programación de la FPGA. Para garantizar el correcto funcionamiento del sistema, es necesario definir la asignación de pines utilizando el archivo Master.xdc (disponible en la carpeta de fuentes del repositorio en GitHub). Con base en dicha asignación, se conectan adecuadamente los elementos del circuito a sus correspondientes pines físicos.
+
+La selección de pines se realizó tomando como referencia el manual de usuario oficial de la Zybo Z7, disponible en la página de Digilent. Con ayuda del diagrama ilustrativo y la tabla de pines, se definieron las conexiones de alimentación, tierra, señales de entrada y salida hacia la protoboard. En particular, se emplearon todos los pines disponibles(menos los de alimentación y GND) del conector Pmod JC para las señales de entrada (A y B), mientras que los mismos pines del conector Pmod JA se destinaron para los 8 bits de la señal de salida. los LEDs M14 y M15 fueron asignados a las señales de busy y done, lo que permitió monitorear en tiempo real el estado del proceso durante la ejecución. También se usaron los pines T15 y P14 para el overflow y el cero respectivamente. Y finalmente, los switches utilizados de la fpga para referirse a la operación fueron P15, W13 y T16.
+
 ![Montaje de la ALU](<implementacion1.jpg>)
 ![alt text](<implementacion2.jpg>)
 A continuación se anexa link de una carpeta drive, la cuál contiene un video que evidencia el correcto funcionamiento de la ALU.
@@ -124,3 +130,20 @@ A continuación se anexa link de una carpeta drive, la cuál contiene un video q
 ## Conclusiones
 
 ## Referencias
+[1] H. S. L. y S. (. Service), Eds., Digital Design and Computer Architecture, 2a ed. San Francisco, CA: Morgan Kaufmann, 2013.
+
+[2] D. D. Gajski, Principles of Digital Design. Upper Saddle River, NJ: Prentice Hall, 1997.
+
+[3] “Zybo Z7 Reference Manual,” Digilent, [Online]. Available: https://digilent.com/reference/programmable-logic/zybo-z7/reference-manual
+[Accessed: Oct. 15, 2025].
+
+[4] J. H. Ramírez, “Lab_electronica_digital_2,” GitHub repository, [Online]. Available: https://github.com/jharamirezma/Lab_electronica_digital_2
+[Accessed: Oct. 15, 2025].
+
+[5] Jharamirezma, “Lab_electronica_digital_2/labs/lab02/README.md at main · jharamirezma/Lab_electronica_digital_2,” GitHub. https://github.com/jharamirezma/Lab_electronica_digital_2/blob/main/labs/lab02/README.md#3-procedimiento
+[Accessed: Oct. 15, 2025].
+
+[6] “Vivado Design Suite User and Reference Guides,” AMD (Xilinx), [Online]. Available: https://docs.amd.com/r/en-US/ug949-vivado-design-methodology/Vivado-Design-Suite-User-and-Reference-Guides
+[Accessed: Oct. 15, 2025].
+
+[7] [![Ver el video](https://img.youtube.com/vi/Vxs5yFAQTrM/0.jpg)](https://www.youtube.com/playlist?list=PL01D33s9LDzaNn2FQfO3uFua1hIZ8JVF4)
