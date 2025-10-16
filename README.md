@@ -129,6 +129,20 @@ A continuación se anexa link de una carpeta drive, la cuál contiene un video q
 
 ## Conclusiones
 
+
+La implementación de la Unidad Aritmético-Lógica permitió comprender de manera práctica cómo se integran los diferentes bloques funcionales de un sistema digital —como sumadores, restadores, multiplicadores y operadores lógicos— dentro de una arquitectura estructural jerárquica. La correcta interacción entre módulos demuestra la solidez del diseño modular y la importancia de definir interfaces bien estructuradas en Verilog.
+
+Diseño estructural y jerárquico:
+El enfoque empleado, basado en la construcción de submódulos independientes y su posterior integración mediante un multiplexor controlado por el opcode, facilitó la depuración y verificación del sistema. Este método promueve la reutilización de código y la escalabilidad del diseño, cualidades esenciales en proyectos de hardware digital más complejos.
+
+Simulación y validación funcional:
+Las simulaciones realizadas en GTKWave confirmaron el funcionamiento correcto de las operaciones definidas (suma, resta, corrimiento, XOR y multiplicación). Estas pruebas fueron fundamentales para detectar y corregir errores antes de la implementación física, reafirmando la relevancia del proceso de verificación previa en el flujo de diseño digital.
+
+Implementación en FPGA:
+La programación de la ALU en la FPGA Zybo Z7 demostró la transición efectiva del diseño desde el entorno de simulación hasta el hardware real. La asignación de pines, la configuración de entradas y salidas mediante resistencias pull-down, y el uso de Vivado para síntesis e implementación, evidenciaron el dominio de un flujo de trabajo completo en diseño digital asistido por herramientas de desarrollo profesional.
+
+
+
 ## Referencias
 [1] H. S. L. y S. (. Service), Eds., Digital Design and Computer Architecture, 2a ed. San Francisco, CA: Morgan Kaufmann, 2013.
 
@@ -146,4 +160,4 @@ A continuación se anexa link de una carpeta drive, la cuál contiene un video q
 [6] “Vivado Design Suite User and Reference Guides,” AMD (Xilinx), [Online]. Available: https://docs.amd.com/r/en-US/ug949-vivado-design-methodology/Vivado-Design-Suite-User-and-Reference-Guides
 [Accessed: Oct. 15, 2025].
 
-[7] [![Ver el video](https://img.youtube.com/vi/Vxs5yFAQTrM/0.jpg)](https://www.youtube.com/playlist?list=PL01D33s9LDzaNn2FQfO3uFua1hIZ8JVF4)
+[7] Lista de reproducción video implementación - (https://www.youtube.com/playlist?list=PL01D33s9LDzaNn2FQfO3uFua1hIZ8JVF4)
