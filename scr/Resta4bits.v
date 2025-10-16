@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 `include "suma4bits.v"
+=======
+`ifndef RESTA4BITS_V
+`define RESTA4BITS_V
+>>>>>>> 66c008f1d54a1a28fefc089f801139967e85344a
 
 // sub4b_signed.v
 module Resta4bits(
@@ -21,3 +26,6 @@ module Resta4bits(
   assign Negative = D[3];
   assign Zero     = (D == 4'b0000);
 endmodule
+
+`endif // RESTA4BITS_V
+

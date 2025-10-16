@@ -1,3 +1,8 @@
+<<<<<<< HEAD
+=======
+`ifndef SUMA4BITS_V
+`define SUMA4BITS_V
+>>>>>>> 66c008f1d54a1a28fefc089f801139967e85344a
 `include "suma1bit.v"
 
 module suma4bits (
@@ -21,3 +26,5 @@ suma1bit bit3(.A(A[3]), .B(B[3]), .Cin(C2), .S(S[3]), .Cout(Cout));
 assign ST = {Cout, S};
 
 endmodule
+
+`endif // SUMA4BITS_V
