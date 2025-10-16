@@ -1,11 +1,8 @@
-<<<<<<< HEAD
 `include "suma4bits.v"
-=======
+
 `ifndef RESTA4BITS_V
 `define RESTA4BITS_V
->>>>>>> 66c008f1d54a1a28fefc089f801139967e85344a
 
-// sub4b_signed.v
 module Resta4bits(
     input  wire [3:0] A,
     input  wire [3:0] B,

@@ -1,8 +1,6 @@
-<<<<<<< HEAD
-=======
 `ifndef SUMA4BITS_V
 `define SUMA4BITS_V
->>>>>>> 66c008f1d54a1a28fefc089f801139967e85344a
+
 `include "suma1bit.v"
 
 module suma4bits (

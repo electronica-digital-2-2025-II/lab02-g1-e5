@@ -1,17 +1,8 @@
-<<<<<<< HEAD
-`include "src/suma1bit.v"
-`include "src/suma4bits.v"
-`include "src/Resta4bits.v"
-`include "src/ModuloXor.v"
-`include "src/Mover_Izquierda.v"
-`include "src/Multiplicador4bits.v"
-=======
 `include "suma4bits.v"
 `include "Resta4bits.v"
 `include "Multiplicador4bits.v"
 `include "Mover_Izquierda.v"
 `include "ModuloXor.v"
->>>>>>> 66c008f1d54a1a28fefc089f801139967e85344a
 
 // Ops:
 //   000: ADD   (A + B)

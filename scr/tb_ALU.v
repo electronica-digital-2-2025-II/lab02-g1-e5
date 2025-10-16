@@ -1,18 +1,6 @@
-<<<<<<< HEAD
-`include "ALU.v"
-`include "Multiplicador4bits.v"
-`include "Resta4bits.v"
-`include "suma4bits.v"
-`include "suma1bit.v"
-`include "ModuloXor.v"
-`include "Mover_Izquierda.v"
-
-=======
->>>>>>> 66c008f1d54a1a28fefc089f801139967e85344a
 `timescale 1ns/1ps
-
 module tb_ALU;
-<<<<<<< HEAD
+
   parameter M = 4;
 
   reg               clk, rst, init;
